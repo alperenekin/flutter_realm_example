@@ -1,3 +1,4 @@
+import 'package:injectable/injectable.dart';
 import 'package:realm/realm.dart';
 import 'local_user.dart';
 
@@ -19,6 +20,8 @@ abstract interface class ILocalStorage {
 
 //TODO convert to singleton, combine with an example that involves UI part. Or just show the calls I will be making but how to verify it works? Maybe a local db viewer.
 //TODO use cubit for example?
+
+@Singleton(as: ILocalStorage)
 class RealmStorage implements ILocalStorage {
   late final Realm _realm;
 
