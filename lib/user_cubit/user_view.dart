@@ -26,8 +26,8 @@ class UserView extends StatelessWidget {
               children: [
                 Center(
                   child: ElevatedButton(
-                      onPressed: () {
-                        context.read<user.UserCubit>().addUser(LocalUser(ObjectId(), 'Alperen', 'Ekin', 'Male'));
+                      onPressed: () async {
+                        await context.read<user.UserCubit>().addUser(LocalUser(ObjectId(), 'Alperen', 'Ekin', 'Male'));
                       },
                       child: Text('Add patient')),
                 )
