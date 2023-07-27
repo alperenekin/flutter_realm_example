@@ -15,8 +15,16 @@ class UserLoaded extends UserState {
   const UserLoaded(this.users);
 }
 
+class UserLoading extends UserState {
+  const UserLoading();
+}
+
 class UserAdded extends UserState {
   const UserAdded();
+}
+
+class UserDeleted extends UserState {
+  const UserDeleted();
 }
 
 class UserError extends UserState {

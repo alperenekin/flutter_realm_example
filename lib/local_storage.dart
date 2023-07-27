@@ -18,9 +18,6 @@ abstract interface class ILocalStorage {
   void dispose();
 }
 
-//TODO convert to singleton, combine with an example that involves UI part. Or just show the calls I will be making but how to verify it works? Maybe a local db viewer.
-//TODO use cubit for example?
-
 @Singleton(as: ILocalStorage)
 class RealmStorage implements ILocalStorage {
   late final Realm _realm;

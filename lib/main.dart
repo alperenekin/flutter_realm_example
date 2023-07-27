@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: BlocProvider(
-        create: (context) => UserCubit(),
+        create: (context) => UserCubit()..getAllUser(),
         child: const UserView(),
       ),
     );
