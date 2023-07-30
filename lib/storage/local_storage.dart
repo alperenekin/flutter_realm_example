@@ -23,10 +23,12 @@ class RealmStorage implements ILocalStorage {
   late final Realm _realm;
 
   RealmStorage() {
-    _realm = Realm(Configuration.local(
-      [LocalUser.schema],
-      schemaVersion: 1,
-    ));
+    _realm = Realm(
+      Configuration.local(
+        [LocalUser.schema],
+        schemaVersion: 1,
+      ),
+    );
   }
 
   @override
