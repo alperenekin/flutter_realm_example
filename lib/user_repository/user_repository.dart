@@ -1,7 +1,7 @@
 import 'package:injectable/injectable.dart';
-import 'package:realm_example/local_user.dart';
 
-import '../local_storage.dart';
+import '../storage/local_storage.dart';
+import '../model/local_user.dart';
 
 abstract interface class UserRepository {
   Future<void> addUser(LocalUser user);

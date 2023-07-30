@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:realm/realm.dart';
-import 'package:realm_example/local_user.dart';
-import 'package:realm_example/user_cubit/user_repository.dart';
+import 'package:realm_example/user_repository/user_repository.dart';
 
 import '../injectable.dart';
+import '../model/local_user.dart';
 
 part 'user_state.dart';
 

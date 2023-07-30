@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:realm/realm.dart';
-import 'package:realm_example/local_user.dart';
 import 'package:realm_example/user_cubit/user_cubit.dart' as user;
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../model/local_user.dart';
 
 class UserView extends StatelessWidget {
   const UserView({super.key});

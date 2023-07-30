@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
 import 'package:realm/realm.dart';
-import 'local_user.dart';
+import '../model/local_user.dart';
 
 abstract interface class ILocalStorage {
   Iterable<M> getAll<M extends RealmObject>();
